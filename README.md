@@ -4,13 +4,19 @@
 
 The purpose of this project is to solve a given Sudoku grid if it is solvable.
 
-This project is part of our Functionnal Programming class. Here is the objective that we had to achieve : 
-[Rules to follow](RULES.md)
+This project is part of our Functionnal Programming class. Our team is composed of 4 software engineering students : 
+- Victor BILLAUD
+- Nicolas CHALANT
+- Maya GAWINOWSKI 
+- Paul GUERRE
+
+Here is the objective that we had to achieve : 
+[Subject](RULES.md)
 
 ### How to use ? 
 
 1. Clone this repository
-2. Add a JSON file that contains a Sudoku Grid in the following format in the ```grids``` folder
+2. Add a JSON file that contains a Sudoku Grid that you want to resolve in the ```grids``` folder. This grid must follow this format :
 
 #### JSON file grid format : 
 
@@ -30,10 +36,12 @@ This project is part of our Functionnal Programming class. Here is the objective
 }
 ```
 
-Where ```null``` represents empty spots 
+```null``` represents empty spots 
 
 3. Type ```sbt``` in your terminal to start the sbt console
 4. Type ```run``` in the sbt console to run the solver
 
 ### Our libraries 
 
+
+### Explanations
