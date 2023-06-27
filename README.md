@@ -38,14 +38,18 @@ Here is the objective that we had to achieve :
 
 ```null``` represents empty spots 
 
+[Why this format ?](https://github.com/victorbillaud/efrei-scala-sudoku-solver/tree/modify-readme#grid-format)
+
 3. Type ```sbt``` in your terminal to start the sbt console
 4. Type ```run``` in the sbt console to run the solver
 
 ### Our libraries 
 
 #### ZIO
+We utilize the ZIO library, which is a powerful functional effect system for Scala, to handle errors, perform asynchronous operations, and manage the overall program flow in a composable and type-safe manner.
 
 #### ZIO-JSON
+
 
 ### Explanations
 
