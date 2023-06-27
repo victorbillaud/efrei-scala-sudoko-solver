@@ -11,6 +11,7 @@ object Main extends ZIOAppDefault {
       _ <- Console.print("Enter the path to the JSON file containing the Sudoku problem:")
       path <- Console.readLine
       _ <-  Console.printLine(s"You entered: $path")
+
       array <- JSONReader.read(path)
       _ <- Console.printLine("The Sudoku problem:")
       _ <- Console.printLine(SudokuSolver.prettyString(array))
@@ -21,3 +22,4 @@ object Main extends ZIOAppDefault {
       _ <- ZIO.succeed(SudokuSolver.solve(array))
     } yield ()
 }
+
