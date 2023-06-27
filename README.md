@@ -43,5 +43,19 @@ Here is the objective that we had to achieve :
 
 ### Our libraries 
 
+#### ZIO
+
+#### ZIO-JSON
 
 ### Explanations
+
+#### Grid format
+We chose to use a JSON file with a 2D list structure to represent the Sudoku grid. The grid is defined as an array of arrays, where each inner array represents a row of the Sudoku grid.
+
+Each cell in the grid is represented by an integer value or the "null" value for empty spots.
+
+Using this JSON format allows for a clear and structured representation of the Sudoku grid. It preserves the spatial relationships between the cells and allows for easy access to rows and columns of the grid during the solving process.
+
+Additionally, the JSON format is widely supported and easy to read and write. It also allows for compatibility with other systems and applications that accept JSON as a standard data exchange format.
+
+By following this JSON format, you can easily define and provide Sudoku grids for the solver, making it convenient to solve different Sudoku puzzles by simply modifying the JSON file.
