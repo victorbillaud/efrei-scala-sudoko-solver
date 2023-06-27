@@ -11,7 +11,7 @@ object Sudoku {
   implicit val decoder: JsonDecoder[Sudoku] = DeriveJsonDecoder.gen[Sudoku]
 }
 
-class JSONReader {
+object JSONReader {
   def read(path: String): ZIO[Any, Throwable, Array[Array[Int]]] =
     for {
       file <- ZIO.succeed(scala.io.Source.fromFile(path))
