@@ -1,8 +1,8 @@
-## sbt project compiled with Scala 3
+## Sudoku Solver
 
-### Usage
+### Context
 
-This is a normal sbt project. You can compile code with `sbt compile`, run it with `sbt run`, and `sbt console` will start a Scala 3 REPL.
+This project is part of our Functionnal Programming class. Here is the objective that we had to achieve : 
+[Rules to follow](RULES.md)
 
-For more information on the sbt-dotty plugin, see the
-[scala3-example-project](https://github.com/scala/scala3-example-project/blob/main/README.md).
+### How to use ? 
