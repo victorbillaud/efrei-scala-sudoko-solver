@@ -1,5 +1,6 @@
 val zioVersion = "2.0.15"
 val scala3Version = "3.3.0"
+val zioJSONVersion = "0.5.0"
 
 lazy val root = project
   .in(file("."))
@@ -11,6 +12,7 @@ lazy val root = project
 
     libraryDependencies ++= Seq(
       "dev.zio" %% "zio" % zioVersion,
+      "dev.zio" %% "zio-json" % zioJSONVersion,
       // Add other libraries like zio-nio and zip-json here if needed
     ).map(_ % Compile),
     libraryDependencies ++= Seq(
