@@ -14,6 +14,7 @@ This project is part of our Functionnal Programming class. Here is the objective
 
 #### JSON file grid format : 
 
+```json
 {
   "sudoku": [
     [5, 3, null, null, 7, null, null, null, null],
