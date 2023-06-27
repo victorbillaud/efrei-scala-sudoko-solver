@@ -19,7 +19,7 @@ class JSONReader {
       result = lines.fromJson[Sudoku]
       _ <- ZIO.succeed(file.close())
       sudoku <- result.fold(
-        error => ZIO.fail(new Exception(s"Failed to parse JSON: $error")),
+        error => ZIO.fail(new Exception("Failed to parse JSON")),
         sudoku => ZIO.succeed(sudoku.toArray)
       )
     } yield sudoku
