@@ -28,8 +28,12 @@ This project is part of our Functionnal Programming class. Here is the objective
     [null, null, null, null, 8, null, null, 7, 9]
   ]
 }
+```
 
 Where ```null``` represents empty spots 
 
 3. Type ```sbt``` in your terminal to start the sbt console
 4. Type ```run``` in the sbt console to run the solver
+
+### Our libraries 
+
