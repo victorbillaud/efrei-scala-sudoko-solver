@@ -23,20 +23,20 @@ Here is the objective that we had to achieve :
 ```json
 {
   "sudoku": [
-    [5, 3, null, null, 7, null, null, null, null],
-    [6, null, null, 1, 9, 5, null, null, null],
-    [null, 9, 8, null, null, null, null, 6, null],
-    [8, null, null, null, 6, null, null, null, 3],
-    [4, null, null, 8, null, 3, null, null, 1],
-    [7, null, null, null, 2, null, null, null, 6],
-    [null, 6, null, null, null, null, 2, 8, null],
-    [null, null, null, 4, 1, 9, null, null, 5],
-    [null, null, null, null, 8, null, null, 7, 9]
+    [5, 3, 0, 0, 7, 0, 0, 0, 0],
+    [6, 0, 0, 1, 9, 5, 0, 0, 0],
+    [0, 9, 8, 0, 0, 0, 0, 6, 0],
+    [8, 0, 0, 0, 6, 0, 0, 0, 3],
+    [4, 0, 0, 8, 0, 3, 0, 0, 1],
+    [7, 0, 0, 0, 2, 0, 0, 0, 6],
+    [0, 6, 0, 0, 0, 0, 2, 8, 0],
+    [0, 0, 0, 4, 1, 9, 0, 0, 5],
+    [0, 0, 0, 0, 8, 0, 0, 7, 9]
   ]
 }
 ```
 
-```null``` represents empty spots 
+```0``` represents empty spots 
 
 [Why this format ?](https://github.com/victorbillaud/efrei-scala-sudoku-solver/tree/modify-readme#grid-format)
 
@@ -56,7 +56,7 @@ We utilize the ZIO library, which is a powerful functional effect system for Sca
 #### Grid format
 We chose to use a JSON file with a 2D list structure to represent the Sudoku grid. The grid is defined as an array of arrays, where each inner array represents a row of the Sudoku grid.
 
-Each cell in the grid is represented by an integer value or the "null" value for empty spots.
+Each cell in the grid is represented by an integer value, with 0 for empty spots.
 
 Using this JSON format allows for a clear and structured representation of the Sudoku grid. It preserves the spatial relationships between the cells and allows for easy access to rows and columns of the grid during the solving process.
 
