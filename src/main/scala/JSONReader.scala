@@ -11,7 +11,7 @@ object Sudoku {
   implicit val decoder: JsonDecoder[Sudoku] = DeriveJsonDecoder.gen[Sudoku]
 }
 
-class JSONReader {
+object JSONReader {
   def read(path: String): ZIO[Any, Throwable, Array[Array[Int]]] =
     for {
       file <- ZIO.succeed(scala.io.Source.fromFile(path))
@@ -19,7 +19,7 @@ class JSONReader {
       result = lines.fromJson[Sudoku]
       _ <- ZIO.succeed(file.close())
       sudoku <- result.fold(
-        error => ZIO.fail(new Exception(s"Failed to parse JSON: $error")),
+        error => ZIO.fail(new Exception("Failed to parse JSON")),
         sudoku => ZIO.succeed(sudoku.toArray)
       )
     } yield sudoku
