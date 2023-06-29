@@ -3,8 +3,8 @@ package sudoku
 import zio._
 import zio.json._
 
-case class Sudoku(sudoku: Array[Array[Option[Int]]]) {
-  def toArray: Array[Array[Int]] = sudoku.map(_.map(_.getOrElse(0)))
+case class Sudoku(sudoku: List[List[Option[Int]]]) {
+  def toList: List[List[Option[Int]]] = sudoku
 }
 
 object Sudoku {
@@ -12,7 +12,7 @@ object Sudoku {
 }
 
 object JSONReader {
-  def read(path: String): ZIO[Any, Throwable, Array[Array[Int]]] =
+  def read(path: String): ZIO[Any, Throwable, List[List[Option[Int]]]] =
     for {
       file <- ZIO.succeed(scala.io.Source.fromFile(path))
       lines <- ZIO.succeed(file.getLines.mkString)
@@ -20,7 +20,7 @@ object JSONReader {
       _ <- ZIO.succeed(file.close())
       sudoku <- result.fold(
         error => ZIO.fail(new Exception("Failed to parse JSON")),
-        sudoku => ZIO.succeed(sudoku.toArray)
+        sudoku => ZIO.succeed(sudoku.toList)
       )
     } yield sudoku
 }
