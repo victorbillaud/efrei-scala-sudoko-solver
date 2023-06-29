@@ -11,6 +11,8 @@ object Main extends ZIOAppDefault {
     for {
       path <- promptForFilePath
       array <- JSONReader.read(path)
+      isValid = SudokuValidator.isValidGrid(array)
+      _ <- if (isValid) ZIO.succeed(()) else ZIO.fail(new Exception("Invalid Sudoku grid"))
       _ <- Console.printLine("The Sudoku problem:")
       _ <- Console.printLine(SudokuSolver.prettyString(array))
       _ <- Console.printLine("The solution:")
