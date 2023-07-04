@@ -49,7 +49,13 @@ Here is the objective that we had to achieve :
 We utilize the ZIO library, which is a powerful functional effect system for Scala, to handle errors, perform asynchronous operations, and manage the overall program flow in a composable and type-safe manner.
 
 #### ZIO-JSON
+We discovered that there are two different ways to read the JSON file: ZIO json and Circe json. 
 
+Circe json is really interesting regarding the performance, the security or even the maintenability, because of the large user base.ZIO json use as the ZIO base for everything, like for example the security, or the documentation. It is developed to work in pair with ZIO, so it will have a great performance if its use with ZIO. 
+
+To conclude, it seems that the decision depends on if we use ZIO. If we do use ZIO, then ZIO json is the better solution, but if not, Circe seems a way more interesting. 
+
+This is why we finally decided to use ZIO json. 
 
 ### Explanations
 
