@@ -23,15 +23,15 @@ Here is the objective that we had to achieve :
 ```json
 {
   "sudoku": [
-    [5, 3, none, none, 7, none, none, none, none],
-    [6, none, none, 1, 9, 5, none, none, none],
-    [none, 9, 8, none, none, none, none, 6, none],
-    [8, none, none, none, 6, none, none, none, 3],
-    [4, none, none, 8, none, 3, none, none, 1],
-    [7, none, none, none, 2, none, none, none, 6],
-    [none, 6, none, none, none, none, 2, 8, none],
-    [none, none, none, 4, 1, 9, none, none, 5],
-    [none, none, none, none, 8, none, none, 7, 9]
+    [5, 3, ```none```, ```none```, 7, ```none```, ```none```, ```none```, ```none```],
+    [6, ```none```, ```none```, 1, 9, 5, ```none```, ```none```, ```none```],
+    [```none```, 9, 8, ```none```, ```none```, ```none```, ```none```, 6, ```none```],
+    [8, ```none```, ```none```, ```none```, 6, ```none```, ```none```, ```none```, 3],
+    [4, ```none```, ```none```, 8, ```none```, 3, ```none```, ```none```, 1],
+    [7, ```none```, ```none```, ```none```, 2, ```none```, ```none```, ```none```, 6],
+    [```none```, 6, ```none```, ```none```, ```none```, ```none```, 2, 8, ```none```],
+    [```none```, ```none```, ```none```, 4, 1, 9, ```none```, ```none```, 5],
+    [```none```, ```none```, ```none```, ```none```, 8, ```none```, ```none```, 7, 9]
   ]
 }
 ```
