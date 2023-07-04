@@ -23,20 +23,20 @@ Here is the objective that we had to achieve :
 ```json
 {
   "sudoku": [
-    [5, 3, 0, 0, 7, 0, 0, 0, 0],
-    [6, 0, 0, 1, 9, 5, 0, 0, 0],
-    [0, 9, 8, 0, 0, 0, 0, 6, 0],
-    [8, 0, 0, 0, 6, 0, 0, 0, 3],
-    [4, 0, 0, 8, 0, 3, 0, 0, 1],
-    [7, 0, 0, 0, 2, 0, 0, 0, 6],
-    [0, 6, 0, 0, 0, 0, 2, 8, 0],
-    [0, 0, 0, 4, 1, 9, 0, 0, 5],
-    [0, 0, 0, 0, 8, 0, 0, 7, 9]
+    [5, 3, none, none, 7, none, none, none, none],
+    [6, none, none, 1, 9, 5, none, none, none],
+    [none, 9, 8, none, none, none, none, 6, none],
+    [8, none, none, none, 6, none, none, none, 3],
+    [4, none, none, 8, none, 3, none, none, 1],
+    [7, none, none, none, 2, none, none, none, 6],
+    [none, 6, none, none, none, none, 2, 8, none],
+    [none, none, none, 4, 1, 9, none, none, 5],
+    [none, none, none, none, 8, none, none, 7, 9]
   ]
 }
 ```
 
-```0``` represents empty spots 
+```none``` represents empty spots 
 
 [Why this format ?](https://github.com/victorbillaud/efrei-scala-sudoku-solver/tree/modify-readme#grid-format)
 
