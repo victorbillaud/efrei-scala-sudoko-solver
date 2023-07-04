@@ -23,7 +23,7 @@ Here is the objective that we had to achieve :
 ```json
 {
   "sudoku": [
-    [5, 3, none, none, 7, none, none, none, none],
+    [5, 3, \none, \none, 7, \none, \none, \none, \none],
     [6, none, none, 1, 9, 5, none, none, none],
     [none, 9, 8, none, none, none, none, 6, none],
     [8, none, none, none, 6, none, none, none, 3],
